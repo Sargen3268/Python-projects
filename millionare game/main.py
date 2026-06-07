@@ -9,7 +9,11 @@ questions = [
     ["Badak speaks what language ?","English","Hindi","Badakish","Marathi",3],
 ]
 
+prizes = [1000, 5000, 10000, 50000, 100000, 500000, 1000000, 5000000]
+i = 0 
+
 for question in questions:
+    
     print(question[0])
     print("A.", question[1])
     print("B.", question[2])
@@ -25,3 +29,5 @@ for question in questions:
         print("Game Over!,Better luck next time badak")
         break 
     
+    print("Badak you have won ", prizes[i], "rupees")
+    i+=1
